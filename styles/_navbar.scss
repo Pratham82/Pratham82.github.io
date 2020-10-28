@@ -1,0 +1,39 @@
+.navbar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	padding: 20px;
+	width: 100vw;
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.479);
+	font-family: IBM Plex mono;
+}
+
+#hero-text {
+	font-size: $text-medium;
+}
+
+.navbar a {
+	text-decoration: none;
+	color: $text-light;
+	font-size: $text-very-small;
+	font-weight: 500;
+	border-bottom: none;
+	// border-bottom: 1px solid;
+}
+
+.nav-links {
+	display: flex;
+}
+
+.nav-links > div {
+	margin: 0 10px;
+}
+
+.nav-links > .nav-item:hover {
+	a:hover {
+		color: rgb(173, 173, 173);
+		transition: 0.5s;
+	}
+}

@@ -1,0 +1,45 @@
+#about-me {
+	height: 100vh;
+	background-color: $bg-secondary3;
+	display: flex;
+	flex-direction: column;
+	color: $text-light;
+}
+
+.about-outer {
+	display: flex;
+	padding: 0 50px;
+	// padding: 20px 50px 20px 50px;
+
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.info-image-div img {
+	width: 550px;
+}
+
+.info-image-div {
+	// width: 50%;
+	margin-top: 50px;
+}
+
+.info-section {
+	// width: 50%;
+	width: 50%;
+	padding: 0 80px;
+}
+
+.about-heading {
+	padding-top: 100px;
+	text-align: center;
+	font-size: $text-very-large;
+	font-family: IBM plex mono;
+}
+
+.my-info-para {
+	margin-top: 80px;
+	font-size: $text-small;
+}

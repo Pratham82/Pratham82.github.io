@@ -1,0 +1,111 @@
+#skills {
+	height: 100vh;
+	background-color: $bg-secondary3;
+	color: $text-light;
+}
+
+.outer-container {
+	display: flex;
+	padding: 50px 50px 20px 50px;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.skills-heading {
+	padding-top: 100px;
+	text-align: center;
+	font-size: $text-very-large;
+	font-family: IBM plex mono;
+}
+
+.outer-container .inner-container {
+	height: 430px;
+	width: 250px;
+	padding: 10px;
+	margin: 10px;
+	// border: none solid;
+	border-radius: 10px;
+	background-color: rgb(24, 53, 97);
+	-webkit-box-shadow: -1px -1px 14px -4px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: -1px -1px 14px -4px rgba(0, 0, 0, 0.75);
+	box-shadow: -1px -1px 14px -4px rgba(0, 0, 0, 0.75);
+}
+
+.outer-container .inner-container:hover {
+	transform: scale(1.05);
+	transition: 0.65s;
+	box-shadow: none;
+}
+
+.inner-container > div {
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	align-items: center;
+}
+
+.skill-container-heading {
+	margin: 15px 0px;
+	text-align: center;
+	font-size: $text-medium;
+}
+
+.lang-name {
+	font-family: IBM plex mono;
+	text-align: center;
+	margin-bottom: 10px;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.lang-logo {
+	width: 50px;
+	height: 50px;
+}
+
+.inner-container > div :hover {
+	// transform: scale(1.15);
+	animation: stretch2 0.9s 1;
+	transform: scale(1);
+
+	// transition: 0.5s;
+	cursor: pointer;
+}
+.inner-container > div > h2:hover {
+	animation: stretch1 0.5s 1;
+	// animation-duration: 2s infinite;
+	transform: scale(1);
+}
+
+@keyframes stretch1 {
+	0% {
+		// transform: scaleX(1);
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scaleX(1.15);
+	}
+
+	100% {
+		// transform: scaleX(1);
+		transform: scale(1);
+	}
+}
+
+@keyframes stretch2 {
+	0% {
+		// transform: scaleX(1);
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.15);
+	}
+
+	100% {
+		// transform: scaleX(1);
+		transform: scale(1);
+	}
+}

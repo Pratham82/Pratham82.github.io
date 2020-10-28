@@ -1,0 +1,58 @@
+//Colors declaration
+$bg-primary: #1d3557;
+$bg-secondary: #70c5fa;
+$bg-secondary2: #023e8a;
+$bg-secondary3: #14213d;
+$bg-light: white;
+$bg-dark: black;
+// Text Styles declaration
+$text-light: white;
+$text-dark: black;
+$text-off-white: rgb(197, 196, 196);
+$text-very-large: 45px;
+$text-bit-large: 35px;
+$text-large: 30px;
+$text-medium: 25px;
+$text-small: 20px;
+$text-very-small: 18px;
+
+@import "./navbar";
+@import "./hero";
+@import "./skills";
+@import "./projects";
+@import "./about-me";
+@import "./contact";
+@import "./footer";
+@import "hamburger";
+@import "./media-queries";
+// scroll colors
+$scrollbarBG: #cfd8dc;
+$thumbBG: #457b9d;
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body,
+html {
+	font-family: "B612", sans-serif;
+	scroll-behavior: smooth;
+	scrollbar-width: thick;
+	scrollbar-color: $bg-secondary3 $bg-secondary;
+
+	body::-webkit-scrollbar {
+		width: 11px;
+	}
+
+	body::-webkit-scrollbar-track {
+		background: $bg-secondary;
+	}
+	body::-webkit-scrollbar-thumb {
+		background-color: $thumbBG;
+		border-radius: 6px;
+		border: 3px solid $scrollbarBG;
+	}
+	// width: 100vw;
+}
